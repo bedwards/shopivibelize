@@ -1,4 +1,4 @@
-import { extend, render, BlockStack, Button } from "@shopify/post-purchase-ui-extensions-react";
+import { extend, render, BlockStack, Box, Button } from "@shopify/post-purchase-ui-extensions-react";
 import PropTypes from "prop-types";
 
 extend("Checkout::PostPurchase::ShouldRender", async () => {
@@ -9,15 +9,19 @@ render("Checkout::PostPurchase::Render", App);
 
 export function App({ done }) {
   return (
-    <BlockStack spacing="loose">
-      <Button
-        submit
-        onPress={() => {
-          done({ redirectUrl: 'https://bedwards.github.io/imaginary-crime-lab/' });
-        }}
-      >
-        Back to the Crime Lab!
-      </Button>
+    <BlockStack>
+      <BlockStack spacing="extraLoose" />
+      <BlockStack spacing="extraLoose" />
+      <BlockStack alignment="center">
+        <Button
+          submit
+          onPress={() => {
+            done({ redirectUrl: 'https://bedwards.github.io/imaginary-crime-lab/' });
+          }}
+        >
+          Back to the Crime Lab!
+        </Button>
+      </BlockStack>
     </BlockStack>
   );
 }
@@ -25,3 +29,4 @@ export function App({ done }) {
 App.propTypes = {
   done: PropTypes.func.isRequired,
 };
+
