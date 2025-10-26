@@ -2,5 +2,8 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^17.2.3"
+  },
+  "scripts": {
+    "vercel-post-purchase-ui": "cd apps/post-purchase-ui && vercel --prod"
   }
 }
