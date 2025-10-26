@@ -1,8 +1,6 @@
-# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
-
 client_id = "ca9c0313d6836b7913180eb9bc16e082"
 name = "post-purchase-ui"
-application_url = "https://post-purchase-pfk2rx3i8-brian-edwards-projects-0d190d6b.vercel.app"
+application_url = "https://post-purchase-ui.vercel.app"
 embedded = true
 
 [build]
@@ -20,8 +18,7 @@ api_version = "2026-01"
   uri = "/webhooks/app/scopes_update"
 
 [access_scopes]
-# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://post-purchase-pfk2rx3i8-brian-edwards-projects-0d190d6b.vercel.app/api/auth" ]
+redirect_urls = [ "https://post-purchase-ui.vercel.app/api/auth" ]
