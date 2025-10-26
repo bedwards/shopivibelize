@@ -19,7 +19,7 @@ export function App({ done }) {
             done({ redirectUrl: 'https://bedwards.github.io/imaginary-crime-lab/' });
           }}
         >
-          Back to the Crime Lab!
+          🔬 Back to the Crime Lab!
         </Button>
       </BlockStack>
     </BlockStack>
