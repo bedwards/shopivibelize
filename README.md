@@ -4,12 +4,46 @@ Shopivibelize adds playful energy to Shopify workflows, turning routine shop act
 
 ## Commands
 
+One-time setup:
+
+```bash
+npm i -g @shopify/cli @shopify/app           # Install CLI (once per machine)
+npm init @shopify/app                        # Create project (once)
+shopify app generate extension               # Add extensions (once per extension)
 ```
-npm init @shopify/app
-npm run shopify app generate extension
-npm run shopify app dev
-npm run shopify app -- --help
+
+Development (every dev session):
+
+```bash
+shopify app dev                              # Local dev with tunnel
 ```
+
+Production (every update):
+
+```bash
+vercel --prod                                # Deploy backend to Vercel
+shopify app deploy                           # Deploy extension to Shopify
+```
+
+For help:
+
+```bash
+shopify app -- --help
+```
+
+## Helpful links
+
+Replace *crime-lab* with your Shopify store name:
+
+[https://admin.shopify.com/store/crime-lab/settings/apps/development](https://admin.shopify.com/store/crime-lab/settings/apps/development)
+
+Replace *4571854* with your Shopify partner ID:
+
+[https://partners.shopify.com/4571854/apps](https://partners.shopify.com/4571854/apps)
+
+Install app in store (replace both IDs or atleast this will let you know you are in the right place as you click around):
+
+[https://dev.shopify.com/dashboard/189074340/apps/291180478465](https://dev.shopify.com/dashboard/189074340/apps/291180478465)
 
 ## Extensions
 

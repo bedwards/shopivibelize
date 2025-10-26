@@ -2,12 +2,11 @@
 
 client_id = "ca9c0313d6836b7913180eb9bc16e082"
 name = "post-purchase-ui"
-application_url = "https://example.com"
+application_url = "https://post-purchase-pfk2rx3i8-brian-edwards-projects-0d190d6b.vercel.app"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-include_config_on_deploy = true
 
 [webhooks]
 api_version = "2026-01"
@@ -25,4 +24,4 @@ api_version = "2026-01"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://post-purchase-pfk2rx3i8-brian-edwards-projects-0d190d6b.vercel.app/api/auth" ]
