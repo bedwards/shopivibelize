@@ -1,4 +1,4 @@
-import { extend, render, BlockStack, Box, Button } from "@shopify/post-purchase-ui-extensions-react";
+import { extend, render, BlockStack, Button } from "@shopify/post-purchase-ui-extensions-react";
 import PropTypes from "prop-types";
 
 extend("Checkout::PostPurchase::ShouldRender", async () => {
@@ -19,7 +19,7 @@ export function App({ done }) {
             done({ redirectUrl: 'https://bedwards.github.io/imaginary-crime-lab/' });
           }}
         >
-          🔬 Back to the Crime Lab!
+          Back to the Crime Lab!
         </Button>
       </BlockStack>
     </BlockStack>
